@@ -10,7 +10,7 @@ class ArchivoObs:
     Clase que representa un archivo de observaciones (Obs).
     """
     columnas_requeridas = [
-    "Cuenta", "Dup", "REGION", "Zona", "Nombre", "Dirección", "Num1", "Num2", "Municipio",
+    "Cuenta", "REGION", "Zona", "Nombre", "Dirección", "Num1", "Num2", "Municipio",
     "Localidad", "Barrio", "Ciclo", "Tarifia", "Flag Ina", "MR_RTE_CD", "SECUENCIA",
     "SIREC_SEGMENTO", "NUMERO_PLACA", "FECHA_OBSERVACION_NO_TRABAJADA",
     "OBSERVACIONES_NO_TRABAJADAS", "CONS_EAT_M3", "Q_SEGMENTO", "TOTAL",
@@ -61,7 +61,6 @@ class ArchivoObs:
 
         self.data = self.data[self.columnas_requeridas]
         self.data['FECHA_BAJADA'] = self.fecha_bajada
-
 
 class Reporte10:
     """
